@@ -10,13 +10,17 @@ def index(request):
 
     return render(
         request,
-        "icndex_view.html",
+        "index_view.html",
         # Relative path from the 'templates'\
         # folder to the template file
         # "index.html", # Use this code for VS 2017 15.7 and earlier
         {
-            'title': "Hello Django",
-            'message': "Hello Django!",
+
+
+
+            'title': "Django!",
+            'message': "Hello World...",
             'content': " on " + now.strftime("%A, %d %B, %Y at %X")
         }
     )
+
